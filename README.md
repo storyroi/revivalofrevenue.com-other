@@ -7,7 +7,7 @@ pre-launch
 4. Create a staging branch on github that the new staging site is deployed on.
 
 post-launch
-5. Cofigure WPMerge on the new live and new staging site - this will handle DB merging issues.
+5. Configure WPMerge on the new live and new staging site - this will handle DB merging issues.
 6. Use the new staging site as a collaborative live environment to add posts, configure settings, etc.
 7. Adding plugins, custom files, etc to be tested on the staging site should be done through the staging branch.
 8. When changes are signed off on the staging site, the main github branch will be updated, and the WPMerge process initiated.
@@ -25,6 +25,7 @@ A few prereqs-
 3.) If on windows, install WSL
 4.) Install Visual Studio Code
 5.) create and connect a github ssh key as filename 'gh' in directory '/bash/.ssh/'
+6.) Rename env-example to .env in the root folder
 
 Dev Steps
 
