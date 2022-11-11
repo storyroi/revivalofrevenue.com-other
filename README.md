@@ -24,6 +24,7 @@ A few prereqs-
 2.) Install Git
 3.) If on windows, install WSL
 4.) Install Visual Studio Code
+5.) create and connect a github ssh key as filename 'gh' in directory '/bash/.ssh/'
 
 Dev Steps
 
