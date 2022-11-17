@@ -31,15 +31,24 @@ Dev Steps
 
 1.) download and extract this repo, open a terminal/powershell window and change directory to the directory where you extracted
 2a.) On windows, execute 
-docker-compose stop ; docker-compose rm -f ; docker-compose down -v ; docker-compose up -d httpd php mysql redis ; ./shell.bat
+
+
+docker-compose stop ; docker-compose rm -f ; docker-compose down -v ; docker-compose up -d httpd php mysql redis ; ./start.bat
+
+
 2b.) On Mac, execute
-docker-compose stop ; docker-compose rm -f ; docker-compose down -v ; docker-compose up -d httpd php mysql redis ; ./shell.sh
+
+
+docker-compose stop ; docker-compose rm -f ; docker-compose down -v ; docker-compose up -d httpd php mysql redis ; sh start.sh
+
 
 The latest staging branch was just cloned and deployed to data\www\rorlocal and the database was cloned from the staging environment.
 The site is hosted locally at rorlocal.loc
 
 3.) Open data\www\rorlocal folder with visual studio code, and begin development.
 4.) Push changes to the git repo.
+
+You can enter the php server shell by running sh shell.sh on mac or ./shell.bat on windows
 
 Running the command from step 2 will destroy and rebuild everything, so make sure you have successfully pushed the changes.
 
