@@ -1,5 +1,6 @@
 #!/bin/bash
 cd /shared/httpd/rorlocal
+rm -rf *
 eval `ssh-agent -s`
 chmod 600 /etc/bashrc-devilbox.d/.ssh/master
 ssh-add /etc/bashrc-devilbox.d/.ssh/master
