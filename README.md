@@ -57,4 +57,6 @@ Ready to deploy your local file changes to the staging site?
 
 Login as the master user on cloudways and run the following command:
 
+ssh-agent bash -c 'ssh-add gh; git clone git@github.com:storyroi/revivalofrevenue.com-WPComposer.git'
+  
 cd /home/852642.cloudwaysapps.com/upchssfppx/private_html && mkdir temp && cd temp && git clone git@github.com:storyroi/revivalofrevenue.com-WPComposer.git && cd revivalofrevenue.com-WPComposer && composer install && mv /home/852642.cloudwaysapps.com/upchssfppx/public_html/web/app/uploads/* /home/852642.cloudwaysapps.com/upchssfppx/private_html/temp/revivalofrevenue.com-WPComposer/web/app/uploads && rm -rf /home/852642.cloudwaysapps.com/upchssfppx/public_html/* && mv * /home/852642.cloudwaysapps.com/upchssfppx/public_html && rm -rf /home/852642.cloudwaysapps.com/upchssfppx/private_html/temp*
